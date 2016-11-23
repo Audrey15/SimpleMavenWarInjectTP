@@ -19,7 +19,7 @@ import org.formation.jsf.model.Student;
 import org.formation.jsf.service.IStudentService;
 
 @Named
-//Completer JSF
+@SessionScoped
 public class StudentController implements Serializable{
 
 	private static final long serialVersionUID = 3774463683041113840L;

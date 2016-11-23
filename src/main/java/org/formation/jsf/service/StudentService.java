@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.Dependent;
+import javax.faces.bean.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -13,6 +13,7 @@ import org.formation.jsf.dao.IStudentDao;
 import org.formation.jsf.model.Student;
 
 @Dependent
+@ApplicationScoped
 public class StudentService implements IStudentService,Serializable {
 
 	@Inject
